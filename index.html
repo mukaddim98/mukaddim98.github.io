@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Homepage</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- normalized stylesheet collected from: https://necolas.github.io/normalize.css/ -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+
+	<body>
+		<header id="header">
+				<!-- The SCHOOL LOGO has been collected from: https://en.wikipedia.org/wiki/Yale_School_of_Art#/media/File:Yale_School_of_Art.png -->
+				<a id = "logo" href="index.html"><img src="images/school.png" alt="Logo"></a>
+				<h1>
+					Yale School of Arts<span id="pageName">&nbsp; .&nbsp; Homepage</span>
+				</h1>
+
+				<div id = "apply_login">
+					<a>Log In</a>
+					<a>Apply</a>
+				</div>
+				
+				<div id="sideBar" onclick="expandCollapse('menuExp',1000);">
+					<a>≡</a>
+				</div>
+				
+				<nav>
+					<a href="index.html">Home</a>
+					<a>About Us</a>
+					<a href="courses.html">Courses</a>
+					<a>Admission</a>
+					<a>Gallery</a>
+				</nav>
+				
+				
+				<div id="menuExp">
+					<a href="index.html">Home</a>
+					<a>About Us</a>
+					<a href="courses.html">Courses</a>
+					<a>Admission</a>
+					<a>Gallery</a>
+					<div id = "menuAppLog">
+						<a>Log In</a>
+						<a>Apply</a>
+					</div>
+				</div>
+				
+		</header>
+		<main>
+			<div id = "highlights">
+					<!-- The HIGHLIGHT IMAGE has been collected from: http://art.yale.edu/image_columns/0014/5941/sasamoto_portrait-lores.jpg -->
+					<img src="images/highlight.jpg" alt="Highlight">
+					<p>
+						Highlight Content 
+					</p>
+			</div>
+			
+			<!-- All OTHER IMAGES have been collected from: https://www.canva.com/photos -->
+			
+			<section>
+				<hr>
+				<hr style="float:right;">
+				<h2>NEWS &amp; EVENTS</h2>
+				<div  id = "new_and_events">
+					<div id = "quadContent" class="tileScreen">
+						<div>
+							<section style="width:100%">
+								<h3>News 1</h3>
+								<a><img src="images/canvas1.jpg" alt="Canvas 1" style="width:100%; "></a>
+							</section>
+						</div>	
+						
+						<div>
+							<section style="float:left; width:100%">
+								<h3>News 2</h3>
+								<a><img src="images/canvas2.jpg" alt="Canvas 2" style="float:right;width:100%"></a>
+							</section>	
+							
+							<section style="width:50%;float:left;overflow: auto;">
+								<h3>Event 1</h3>
+								<a><img src="images/canvas3.jpg" alt="Canvas 3" style="width:100%"></a>
+							</section>
+							
+							<section style="width:50%;float:left;">
+								<h3>Event 2</h3>
+								<a><img src="images/canvas4.jpg" alt="Canvas 4" style="width:100%"></a>
+							</section>
+						</div>
+					</div>		
+					<div  id = "tabs">
+						<a id = "app" style="width: 40px;">Apply</a>
+						<a id = "info" style="width: 125px;">More Information</a>
+					</div>
+				</div>	
+			</section>
+			
+			
+
+			<section>
+				<hr>
+				<hr style="float:right">
+				<h2>WHAT'S HAPPENING</h2>
+				<div id = "tileSection" class="tileScreen">
+					<section>
+						<h3>Content 1</h3>
+						<a><img src="images/canvas1.jpg" alt="Canvas 1" style="width:100%"></a>
+					</section>
+					
+					<section>
+						<h3>Content 2</h3>
+						<a><img src="images/canvas3.jpg" alt="Canvas 3" style="float:right;width:100%"></a>
+					</section>	
+					
+					<section>
+						<h3>Content 3</h3>
+						<a><img src="images/canvas4.jpg" alt="Canvas 4" style="width:100%"></a>
+					</section>
+					
+					<section>
+						<h3>Content 4</h3>
+						<a><img src="images/canvas1.jpg" alt="Canvas 1" style="width:100%"></a>
+					</section>
+					
+					<section>
+						<h3>Content 5</h3>
+						<a><img src="images/canvas3.jpg" alt="Canvas 3" style="float:right;width:100%"></a>
+					</section>	
+					
+					<section>
+						<h3>Content 6</h3>
+						<a><img src="images/canvas4.jpg" alt="Canvas 4" style="width:100%"></a>
+					</section>
+				</div>	
+			</section>
+		
+		</main>
+		
+		<footer>
+			<div id = "contact_info">
+				<h3>
+					<a id = "contactExp" onclick="expandCollapse('messageForm',300);" >Contact Us</a>
+				</h3>
+				<div id="messageForm">
+					<form id="login" action="#" method="post" style="width:100%; height: 200px">
+						<div>
+							<p>Email:</p>
+							<div><input type="email" name="email"></div>
+							<p>Subject:</p>
+							<div><input type="text" name="pW"></div>
+							<p>Message:</p>
+							<div><textarea name="message"></textarea></div>
+						</div>
+						<div id = "submit">
+							<button onclick="window.alert('Thank you for your feedback!')">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			
+			<!-- All ICONS has been collected from: https://www.iconfinder.com/iconsets/2018-social-media-black-and-white-logos -->
+			<div id = "social_media">
+				<a><img src="images/facebook.png" alt="Facebook"></a>
+				<a><img src="images/twitter.png" alt="Twitter"></a>
+				<a><img src="images/instagram.png" alt="Instagram"></a>
+				<a><img src="images/youtube.png" alt="YouTube"></a>
+			</div>
+			
+			<div id = "copyright">
+				<p><small>&copy; 2018</small></p>
+			</div>
+		</footer>
+		
+		<script src="js/scripts.js"></script>
+		
+	</body>
+	
+	
+</html>

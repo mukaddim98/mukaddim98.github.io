@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Courses</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	
+	<body>
+		<header id="header">
+				<!-- The SCHOOL LOGO has been collected from: https://en.wikipedia.org/wiki/Yale_School_of_Art#/media/File:Yale_School_of_Art.png -->
+				<a id = "logo" href="index.html"><img src="images/school.png" alt="Logo"></a>
+				<h1>
+					Yale School of Arts<span id="pageName">&nbsp; .&nbsp; Homepage</span>
+				</h1>
+
+				<div id = "apply_login">
+					<a>Log In</a>
+					<a>Apply</a>
+				</div>
+				
+				<div id="sideBar" onclick="expandCollapse('menuExp',1000);">
+					<a>≡</a>
+				</div>
+				
+				<nav>
+					<a href="index.html">Home</a>
+					<a>About Us</a>
+					<a href="courses.html">Courses</a>
+					<a>Admission</a>
+					<a>Gallery</a>
+				</nav>
+				
+				
+				<div id="menuExp">
+					<a href="index.html">Home</a>
+					<a>About Us</a>
+					<a href="courses.html">Courses</a>
+					<a>Admission</a>
+					<a>Gallery</a>
+					<div id = "menuAppLog">
+						<a>Log In</a>
+						<a>Apply</a>
+					</div>
+				</div>
+		</header>
+		<main>
+			<!-- All IMAGES have been collected from: https://www.canva.com/photos -->
+			<div id = "highlights">
+					<img src="images/course1.jpg" alt="Course 1">
+					<p>
+						Course 1 Summary 
+					</p>
+			</div>
+
+			<section>
+				<hr>
+				<hr style="float:right">
+				<h2>COURSE BY DEPARTMENT</h2>
+				<div id="tileSection" class="tileScreen">
+					<section>
+						<h3>Department 1</h3>
+						<a><img src="images/dep1.jpg" alt="Department 1"></a>
+					</section>
+					
+					<section>
+						<h3>Department 2</h3>
+						<a><img src="images/dep2.jpg" alt="Department 2"></a>
+					</section>	
+					
+					<section>
+						<h3>Department 3</h3>
+						<a><img src="images/dep3.jpg" alt="Department 3"></a>
+					</section>
+					
+					<section>
+						<h3>Department 4</h3>
+						<a><img src="images/dep4.jpg" alt="Department 4"></a>
+					</section>
+					
+					<section>
+						<h3>Department 5</h3>
+						<a><img src="images/dep5.jpg" alt="Department 5"></a>
+					</section>	
+					
+					<section>
+						<h3>Department 6</h3>
+						<a><img src="images/dep6.jpg" alt="Department 6"></a>
+					</section>
+				</div>	
+			</section>
+			
+			<section class = "longBlock">
+				<hr>
+				<hr style="float:right">
+				<h2>ALUMNI STORY</h2>
+				<div style="float:left;">
+					
+					<img src="images/alumni1.jpg" alt="Alumni 1" style="float:left;">
+					<div style="float:left;">
+						<h3 style="text-align:left;">Story 1</h3>
+						<p>
+							Story one.Story one.Story one.Story one.Story one.Story one.Story one.Story one.Story one.Story one.Story one.Story one.Story one.Story one.Story one.Story one.Story one.Story one.Story one.Story one.Story one.Story one.Story one.Story one.Story one.Story one.Story one.Story one.Story one.Story one. 
+						</p>
+					</div>
+				</div>
+				
+				<div style="float:right; padding-left: 0%; padding-right: 2.5%;">
+					
+					<img src="images/alumni2.jpg" alt="Alumni 2" style="float:right;">
+					<div style="float:right">
+						<h3 style="text-align:left;">Story 2</h3>
+						<p>
+							Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.Story two.
+						</p>
+					</div>	
+				</div>	
+
+			</section>
+		
+		</main>
+		
+		<footer>
+			<div id = "contact_info">
+				<h3>
+					<a id = "contactExp" onclick="expandCollapse('messageForm',300);" >Contact Us</a>
+				</h3>
+				<div id="messageForm">
+					<form id="login" action="#" method="post" style="width:100%; height: 200px">
+						<div>
+							<p>Email:</p>
+							<div><input type="email" name="email"></div>
+							<p>Subject:</p>
+							<div><input type="text" name="pW"></div>
+							<p>Message:</p>
+							<div><textarea name="message"></textarea></div>
+						</div>
+						<div id = "submit">
+							<button onclick="window.alert('Thank you for your feedback!')">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			
+			<!-- All ICONS has been collected from: https://www.iconfinder.com/iconsets/2018-social-media-black-and-white-logos -->
+			<div id = "social_media">
+				<a><img src="images/facebook.png" alt="Facebook"></a>
+				<a><img src="images/twitter.png" alt="Twitter"></a>
+				<a><img src="images/instagram.png" alt="Instagram"></a>
+				<a><img src="images/youtube.png" alt="YouTube"></a>
+			</div>
+			
+			<div id = "copyright">
+				<p><small>&copy; 2018</small></p>
+			</div>
+		</footer>
+		
+		<script src="js/scripts.js"></script>
+		
+	</body>
+	
+	
+</html>

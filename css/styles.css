@@ -1,0 +1,542 @@
+/*** BODY ***/
+
+body{
+	font-family: helvetica;
+	margin: 0px;
+}
+
+/* all anchor links */
+a{
+	cursor: pointer;
+}
+
+
+/*** HEADER ***/
+
+header{
+	position: fixed;
+	width: 100%;
+	color: #f2f2f2;
+	background-color: rgba(30,30,47,0.7);
+	z-index: 50;
+}
+
+header h1{
+	width:70%; 
+	float:left; 
+	font-size: 200%;
+	margin-top: 1.25%;
+	margin-bottom: 1.25%;
+}
+
+/* NAVIGATION */
+
+nav{
+	clear:left;
+	width:90%;
+	height: 30px; 
+	margin-left:68px;
+	margin-right:68px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	
+}
+
+nav a{
+	text-decoration:none;
+	margin: 10px 10px 10px 0px;
+	padding: 5px;
+	border: 1px solid #f2f2f2;
+	color: #f2f2f2;	
+}
+
+nav a:hover{
+	background-color: rgba(30,30,47,0.9);
+}
+
+/* EXPANDED MENU*/
+
+#menuExp{
+	clear: left;
+	/* collected and modified from a YouTube video. Link: https://www.youtube.com/watch?v=g_rv9XfQJTE */
+	height: 0px;
+	overflow: hidden;
+	transition: all .5s linear;
+	
+}
+
+#menuExp a{
+	float:left;
+	width:20%;
+	height: 30px; 
+	margin-left:40%;
+	margin-right:40%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 15pt;
+	text-decoration: none;
+	color: #f2f2f2;	
+}
+
+#menuAppLog{
+	padding: 0px;
+	margin: 0px;
+	display: none;
+}
+
+/* APPLY/LOGIN TABS */
+
+#apply_login{
+	position: absolute;
+	right: 0%;
+	width:40%; 
+	float:right;
+}
+
+
+#apply_login a{
+	float:right;
+	margin: 10px 10px 10px 0px;
+	padding: 5px;
+	border: 1px solid #f2f2f2;
+}
+
+#apply_login a:hover{
+	background-color: rgba(30,30,47,0.9);
+}
+
+/* SHORTCUT SIDE-BAR FOR EXPANDED MENU */
+
+#sideBar{
+	display: none;
+	position: absolute;
+	right: 0%;
+	top: 5%; 
+	float:right;
+	margin-top: 10px;
+}
+
+#sideBar a{
+	font-size:20pt; 
+	padding: 5px 10px;
+}
+
+#sideBar a:hover{
+	background-color: rgba(30,30,47,0.9)
+}
+
+/* LOGO */
+
+#logo{
+	float:left;
+}
+
+#logo img{
+	padding: 10px;
+	margin: 10px;
+	background-color: #f2f2f2; /* white variant */
+	width:27px; 
+	height:30px
+}
+
+
+
+/*** MAIN ***/
+
+main{
+	background-color: #f2f2f2;
+	overflow: auto;
+	
+}
+
+main > section{
+	width: 100%;
+}
+
+main section hr{
+	width:37%;
+	float:left;
+}
+
+main section h2{
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	clear: left;
+}
+
+main section section h3{
+	text-align: center;
+	width: 100%;
+}
+
+/* HIGHLIGHTS */
+
+#highlights{
+	width: 100%;
+	position: relative; 
+	z-index: 0;
+	margin-bottom:1.25%;
+}
+
+
+#highlights img{
+	width: 100%;	
+}
+
+#highlights p{
+	text-align:center; 
+	margin: 0px; 
+	position: absolute; 
+	bottom: 1%; 
+	z-index: 1; 
+	width: 30%;					
+	color: #f2f2f2;
+	background-color: rgba(30,30,47,0.5);
+	height: 20%;
+}
+
+
+/* NEWS AND EVENTS SECTION */
+
+#new_and_events{
+	overflow: hidden;
+	
+}
+
+#new_and_events section{
+	margin: 0%;
+}
+
+/* QUADRILATERRAL TILED CONTENTS */
+
+#quadContent{
+	display: flex; 
+	flex-flow: row wrap; 
+	justify-content: center; 
+	align-items: center;
+	padding: 1.25%;
+	overflow: auto;
+	width:90%;
+	margin: auto;
+}
+
+
+#quadContent > div{
+	margin: 1.25%;
+	width: 45%;
+	
+}
+
+
+#quadContent img{
+	/* Collected and modified from Stack Overflow. Link: https://stackoverflow.com/questions/11535392/how-to-decrease-image-brightness-in-css*/
+	filter: brightness(70%);
+}
+
+#quadContent img:hover{
+	filter: brightness(100%);
+}
+
+#quadContent h3{
+	color: white;
+	position: absolute;
+	width: 150px;
+	z-index: 10;
+	 
+}
+
+/* APPLY/MORE INFO TABS */
+
+#tabs{
+	padding: 0px;
+	margin: auto;
+	width: 80%;
+	display: flex;
+	flex-flow: row wrap; 
+	justify-content: center; 
+	align-items: center;
+	
+}
+
+#tabs a{
+	margin-top: 1%;
+	margin-bottom: 1%;
+	color: #f2f2f2;
+	padding: 10px;
+	border-color: white;
+	background-color: rgba(30,30,47,0.5);
+}
+
+#tabs a:hover{
+	background-color: rgba(30,30,47,1);
+} 
+
+#app{
+	margin-right:15%;
+}
+
+#info{
+	margin-left:15%;
+}
+
+/* TILED SECTIONS */
+
+#tileSection{
+	padding: 2.5%;
+	display: flex; 
+	flex-flow: row wrap; 
+	justify-content: center; 
+	align-items: center;
+	
+}
+#tileSection section{
+	padding: 1.25%;
+	width: 30%;
+	background-color: #f2f2f2;	
+}
+	
+#tileSection h3{
+	color: white;
+	position: absolute;
+	width: 200px;
+	z-index: 10;
+	 
+}
+	
+#tileSection hr{
+	width:37%;
+} 
+
+#tileSection img{
+	/* Collected and modified from Stack Overflow. Link: https://stackoverflow.com/questions/11535392/how-to-decrease-image-brightness-in-css*/
+	filter: brightness(70%);
+	width:100%;
+}
+
+#tileSection img:hover{
+	filter: brightness(100%);
+}
+
+/* CLASS FOR ALUMNI LONG BLOCKS */
+
+.longBlock{
+	overflow: auto;
+}	
+
+.longBlock > div{
+	padding-left: 2.5%;
+	padding-bottom: 2.5%;
+	padding-top: 2.5%;
+	width:80%;
+	
+}
+
+.longBlock div div{
+	width: 70%; 
+	padding:10px; 
+	margin: 35px 10px; 
+	background-color: rgba(30,30,47,0.5);
+}
+
+.longBlock p, h3{
+	text-align: left;
+	padding: 0px;
+	color: #f2f2f2;	 
+}
+
+.longBlock img{
+	width:200px;
+	
+	/* collected from Stack Overflow. Link: https://stackoverflow.com/questions/26421274/css-circular-cropping-of-rectangle-image*/
+	overflow: hidden;
+    border-radius: 50%;
+	
+	border: 10px solid rgba(30,30,47,0.5);
+	
+}
+
+
+
+/* FOOTER */
+
+footer{
+	width: 100%;
+	color: #f2f2f2;
+	font-family: helvetica;
+	background-color: #1e1e2f;
+	float:left;
+}
+
+/* SOCIAL MEDIA ICONS */
+
+#social_media{
+	overflow: auto;
+	width: 200px;
+	float: right;
+}
+
+#social_media a{
+	float:right;
+	padding-right: 10px;
+
+}
+
+#social_media img{
+	width:25px; 
+	height:25px;
+	background-color: black;
+	border: 1px solid #f2f2f2;
+	padding: 5px;
+}
+
+#social_media img:hover{
+	background-color: #f2f2f2;
+}
+
+/* CONTACT INFORMATION */
+
+#contact_info{
+	padding: 10px;
+	width: 30%;
+	clear:left;
+}
+
+#contact_info h3{
+	width: 122px;
+	padding: 10px;
+	margin: 0px;
+}
+
+#contact_info h3 a{
+	text-decoration:none;
+	margin: 0px;
+	padding: 5px;
+	border: 1px solid #f2f2f2;
+	color: #f2f2f2;
+	cursor: pointer;
+}
+
+#messageForm{
+	height: 0px;
+	overflow: hidden;
+	transition: all .5s linear;
+	padding: 10px;
+}
+
+#submit{
+	padding: 20px;
+	width: 71px;
+}
+
+/* COPYRIGHT */
+
+#copyright{
+	padding: 10px;
+	width:30%;
+	height:30px;
+}
+
+/*** MEDIA ***/
+
+/* To make the alumni stories have larger block section*/
+@media screen and (max-width:1090px){
+	
+	.longBlock div div{
+		width: 80%;
+		float: none;
+	}
+	
+}
+
+/* For Tablet view */
+@media screen and (max-width:770px){
+
+	#tileSection section{
+			width: 40%
+		}
+}		
+
+/* To hide the navigation bar and show menu bar*/
+@media screen and (max-width:625px){
+
+	
+	nav{
+		display: none;
+	}
+	
+	#pageName{
+		display:none;
+	}
+	
+	#apply_login{
+		margin-right: 5%;
+	}
+	
+	#sideBar{
+		display: block;
+	}
+	
+	
+}
+
+/* To appear boxed sections in mobile view */
+@media screen and (max-width:600px){
+	
+	#quadContent div{
+		width: 350px;
+	}
+	
+	#tileSection section{
+		width: 350px;
+	}
+	
+}
+
+
+/* To hide more of the texts in the header and align contents in footer to the center*/
+@media screen and (max-width:555px){
+	
+	#apply_login{
+		display: none;
+	}
+	
+	#menuAppLog{
+		display: block;
+	}
+	
+	#social_media{
+		float:none;
+		margin: auto;
+		padding: 20px;
+	}
+	
+	#contact_info{
+		width: 50%;
+		float:none;
+		margin: auto;
+	}
+	
+	#contact_info h3{
+		margin: auto;
+	}
+}
+
+/* To slightly decrease top heading size*/
+@media screen and (max-width:435px){
+	header h1{
+		font-size: 180%;
+	}
+}	
+
+/* To adjust the tabs section to match the mobile view */
+@media screen and (max-width:390px){
+	#tabs a{
+		float: left;
+		margin: 10px;
+	}
+	
+	#tabs{
+		height: 200px;
+	}
+}
