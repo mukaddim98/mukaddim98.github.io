@@ -1,181 +1,269 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title>Homepage</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		<!-- normalized stylesheet collected from: https://necolas.github.io/normalize.css/ -->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/styles.css">
-	</head>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="./styles/main.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./styles/flip-card.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <style>
+      .proj{
+        width: 33%; padding: 10px;
+      }
+      #hello{
+        padding: 50px; width: 50%; float: left;
+      }
+      #hello2{
+        display: none;
+        padding: 50px; width: 50%; float: left;
+      }
+      #profilePic{
+        background-color: thistle;
+        width: 50%;
+        float: left;
+      }
+      @media only screen and (max-width: 750px) {
+        #hello{
+          display:none;
+          width: 100%;
+        }
+        #hello2{
+          display:block;
+          width: 100%;
+        }
+        #profilePic{
+          width: 100%;
+        }
+        .proj{
+          width: 50%;
+        }
+      }
+    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="./node_modules/mdbootstrap/css/mdb.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./node_modules/mdbootstrap/js/mdb.min.js"></script>
+    <script src="./node_modules/mdbootstrap/js/jquery.min.js"></script>
+    <script src="./node_modules/mdbootstrap/js/popper.min.js"></script>
+  </head>
+  <body>
+    <nav class="nav" style="background-color:grey">
+      <div class="container-fluid">
+        <ul class="nav">
+          <li style="font-size: 18px;">
+            <a href="index.html" style="color: snow;">Home</a>
+          </li>
+          <li style="font-size: 18px;"">
+            <a href="about.html" style="color: snow;">About Me</a>
+          </li>
+          <li style="font-size: 18px;">
+            <a href="index.html" style="color: snow;">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div
+      class="m-5"
+      style="float: left;"
+    >
+    <div
+    id="hello2"
+    data-aos="fade-up"
+    data-aos-duration="2000"
+  >
+    <h1>"Hello World"</h1>
+    <h2>> I'M ABDULLAH</h2>
+    <p>
+      Passionate software developer studying at
+      <span style="font-weight: bold; font-size: large;"
+        >Dalhousie University</span
+      >
+      with enthusism in Robotics and AI. Looking forward to doing
+      <span style="font-weight: bold; font-size: large;">COOP</span> at your
+      company this
+      <span style="font-weight: bold; font-size: large;">Winter 2020</span>.
+    </p>
+  </div>
+    <div
+      id="profilePic" 
+      data-aos="fade-up"
+      data-aos-duration="3000"
+    >
+      <img
+        src="https://lh3.googleusercontent.com/qjJQ3NeHmMwwG8yZfbRmqXid51gxv1DlKb0BeFXjsuW_wkhnc6VPy2_zJl-F6w26-98m7hF88vpwV310Mn52q0KMQLnIMGJFOA3O9fNegj9T_8B5cUtaB2kbZe6BDkiaBX9uowNhVgs2dB94AzQwdgflUiTUHDuWEwb05_HlNzj1yP9QMF6G5vy0lv6_Tx0Xuh6pDoJTUejvsBeNLPic62d7HN6wWr1tefExjBZrPZMiZrSvusUvUe9Q2keh-NQ3R6wn7sGBiArIVLjkVC39J7bjD5hZ_1i_1oNCF6zWIpesPOdICtGxHpSOnr_33dKSUHPJZKsleuJPmPEJDKz0o57VX5UQKe70wnEYhEk5I8_07SVfLgHU9jSb1349ixdUL5vE4uDhlnknZr7HZvNTSsndEbzduNSyXDQP1gDJA7D9R3ughR84RXesVhRaXhx0NSN2bFBLUICW5pyoI8zpjXww3ag9yR_Z9qrK2RZINKC-qTWwghzc3oGLO2ikbz_VHeZ07W8M7MZ8mgCzDxJ29SldcODY3ds6dOcugLwZJhTy-UTxbr7X8Z4uq8RoKN5qEutg6Pefd1gwMxhawGnaNg31Z4KCVqQ68KOnMEsNApm3g6WShG-sywAi9W5xre2VYrTkxI_gJPFwf0Ls250sMSt2dxUg-mJyXv3JPD3mG3srfdBVFuV6KYvPs_r1Ttg=s1468-no?authuser=0"
+        alt="profile-picture"
+        width="100%"
+        height="100%"
+      />
+    </div>
+      
+      <div
+        id="hello"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        <h1>"Hello World"</h1>
+        <h2>> I'M ABDULLAH</h2>
+        <p>
+          Passionate software developer studying at
+          <span style="font-weight: bold; font-size: large;"
+            >Dalhousie University</span
+          >
+          with enthusism in Robotics and AI. Looking forward to doing
+          <span style="font-weight: bold; font-size: large;">COOP</span> at your
+          company this
+          <span style="font-weight: bold; font-size: large;">Winter 2020</span>.
+        </p>
+      </div>
+      
+     
+    </div>
 
-	<body>
-		<header id="header">
-				<!-- The SCHOOL LOGO has been collected from: https://en.wikipedia.org/wiki/Yale_School_of_Art#/media/File:Yale_School_of_Art.png -->
-				<a id = "logo" href="index.html"><img src="images/school.png" alt="Logo"></a>
-				<h1>
-					Yale School of Arts<span id="pageName">&nbsp; .&nbsp; Homepage</span>
-				</h1>
+    <div class="row m-5" style="float:left;">
+      <div class="mb-5" style="width: 100%; text-align: center; padding: 10px">
+        <h1 data-aos="fade-up" data-aos-duration="2000">What I did this Summer...</h1>
+        <p data-aos="fade-up" data-aos-duration="2500">I started of this April enrolling in a COVID-19 Hackathon with a team of 4 where I got to work on a COVID-19 companion app idea. After we got knocked out, I planned on taking the project on my own, which drove me to learn more about React Native. While watching tutorials on YouTube, I realised how powerful React Native was. I was always interested with Raspberry Pi and I got a amazing idea to work on a gardening project. At this point I thought I’d take more professional courses. So I enrolled in the Ultimate React Native Course with Mosh where it was teaching me how to make an app like Kijiji. After doing the 1st part of the course I thought I need to learn about the React.js to clear up a bit on the basics. But in that moment I got a opportunity to take a course at Dalhousie that mimicked a workplace like environment. It was a 2 months course and the last 4 weeks, our team build a TA Management System for the Dal FCS. Right now, I am learning React.js with Mosh to build a shopping cart website. After that I’ll finish up the React Native course. Along side that I’ll be working on the water me and the Covidibuddy and a cousin’s remote barber app idea.</p>
+      </div>
+    </div>
 
-				<div id = "apply_login">
-					<a>Log In</a>
-					<a>Apply</a>
-				</div>
-				
-				<div id="sideBar" onclick="expandCollapse('menuExp',1000);">
-					<a>≡</a>
-				</div>
-				
-				<nav>
-					<a href="index.html">Home</a>
-					<a>About Us</a>
-					<a href="courses.html">Courses</a>
-					<a>Admission</a>
-					<a>Gallery</a>
-				</nav>
-				
-				
-				<div id="menuExp">
-					<a href="index.html">Home</a>
-					<a>About Us</a>
-					<a href="courses.html">Courses</a>
-					<a>Admission</a>
-					<a>Gallery</a>
-					<div id = "menuAppLog">
-						<a>Log In</a>
-						<a>Apply</a>
-					</div>
-				</div>
-				
-		</header>
-		<main>
-			<div id = "highlights">
-					<!-- The HIGHLIGHT IMAGE has been collected from: http://art.yale.edu/image_columns/0014/5941/sasamoto_portrait-lores.jpg -->
-					<img src="images/highlight.jpg" alt="Highlight">
-					<p>
-						Highlight Content 
-					</p>
-			</div>
-			
-			<!-- All OTHER IMAGES have been collected from: https://www.canva.com/photos -->
-			
-			<section>
-				<hr>
-				<hr style="float:right;">
-				<h2>NEWS &amp; EVENTS</h2>
-				<div  id = "new_and_events">
-					<div id = "quadContent" class="tileScreen">
-						<div>
-							<section style="width:100%">
-								<h3>News 1</h3>
-								<a><img src="images/canvas1.jpg" alt="Canvas 1" style="width:100%; "></a>
-							</section>
-						</div>	
-						
-						<div>
-							<section style="float:left; width:100%">
-								<h3>News 2</h3>
-								<a><img src="images/canvas2.jpg" alt="Canvas 2" style="float:right;width:100%"></a>
-							</section>	
-							
-							<section style="width:50%;float:left;overflow: auto;">
-								<h3>Event 1</h3>
-								<a><img src="images/canvas3.jpg" alt="Canvas 3" style="width:100%"></a>
-							</section>
-							
-							<section style="width:50%;float:left;">
-								<h3>Event 2</h3>
-								<a><img src="images/canvas4.jpg" alt="Canvas 4" style="width:100%"></a>
-							</section>
-						</div>
-					</div>		
-					<div  id = "tabs">
-						<a id = "app" style="width: 40px;">Apply</a>
-						<a id = "info" style="width: 125px;">More Information</a>
-					</div>
-				</div>	
-			</section>
-			
-			
+    <div class="row m-5" style="float:left;">
+      <div class="mb-5" style="width: 100%; text-align: center;" data-aos="fade-up"
+      data-aos-duration="2000">
+        <h1>My Recent Projects</h1>
+      </div>
 
-			<section>
-				<hr>
-				<hr style="float:right">
-				<h2>WHAT'S HAPPENING</h2>
-				<div id = "tileSection" class="tileScreen">
-					<section>
-						<h3>Content 1</h3>
-						<a><img src="images/canvas1.jpg" alt="Canvas 1" style="width:100%"></a>
-					</section>
-					
-					<section>
-						<h3>Content 2</h3>
-						<a><img src="images/canvas3.jpg" alt="Canvas 3" style="float:right;width:100%"></a>
-					</section>	
-					
-					<section>
-						<h3>Content 3</h3>
-						<a><img src="images/canvas4.jpg" alt="Canvas 4" style="width:100%"></a>
-					</section>
-					
-					<section>
-						<h3>Content 4</h3>
-						<a><img src="images/canvas1.jpg" alt="Canvas 1" style="width:100%"></a>
-					</section>
-					
-					<section>
-						<h3>Content 5</h3>
-						<a><img src="images/canvas3.jpg" alt="Canvas 3" style="float:right;width:100%"></a>
-					</section>	
-					
-					<section>
-						<h3>Content 6</h3>
-						<a><img src="images/canvas4.jpg" alt="Canvas 4" style="width:100%"></a>
-					</section>
-				</div>	
-			</section>
-		
-		</main>
-		
-		<footer>
-			<div id = "contact_info">
-				<h3>
-					<a id = "contactExp" onclick="expandCollapse('messageForm',300);" >Contact Us</a>
-				</h3>
-				<div id="messageForm">
-					<form id="login" action="#" method="post" style="width:100%; height: 200px">
-						<div>
-							<p>Email:</p>
-							<div><input type="email" name="email"></div>
-							<p>Subject:</p>
-							<div><input type="text" name="pW"></div>
-							<p>Message:</p>
-							<div><textarea name="message"></textarea></div>
-						</div>
-						<div id = "submit">
-							<button onclick="window.alert('Thank you for your feedback!')">Submit</button>
-						</div>
-					</form>
-				</div>
-			</div>
-			
-			<!-- All ICONS has been collected from: https://www.iconfinder.com/iconsets/2018-social-media-black-and-white-logos -->
-			<div id = "social_media">
-				<a><img src="images/facebook.png" alt="Facebook"></a>
-				<a><img src="images/twitter.png" alt="Twitter"></a>
-				<a><img src="images/instagram.png" alt="Instagram"></a>
-				<a><img src="images/youtube.png" alt="YouTube"></a>
-			</div>
-			
-			<div id = "copyright">
-				<p><small>&copy; 2018</small></p>
-			</div>
-		</footer>
-		
-		<script src="js/scripts.js"></script>
-		
-	</body>
-	
-	
+      <div class="proj" data-aos="fade-up" data-aos-duration="2000">
+        <a href="covidibuddy.html">
+          <div style="margin: auto;" class="view overlay zoom">
+            <img
+              src="https://lh3.googleusercontent.com/Q1QqdMixDVMIW7sZGZx4ycZ9DrheM0uVgBX3BVYYr0PUGN2sHtcC3yAv6lvPatIR9rHP48gF1chWW2CnaRbkuczyFPjIlESU4-bXySxRRpXzzzgKR1VEOsQJgyqajdZOfRJz5jO_x3rnFJmKdCzUkXyrrKzW5lGJppPqfonMhwoFa03T-FoiOqtLXRrFNClL-2XyEubcr_o_oK5D3Fu7aILNcWCBBf47JV8oOQhFmTD6RNaZacdHyjNEBo4TT2zV9QcC6_aX__CalzjTAOTGup0IkUnrLjk8fjlUi6RUxvoX-frvemmu1g5VlWY6rpwbIHlh2MHDz2UYy3nIVhy8YYEZfvU6X3u-hxtJnN9Q_mBgbCxTkDNHVyu5tuca_3w_UpSqkl8rZ84jzydUgBsidb_-tLj0pb6JF1mQHfVmXGHi2S46BpsfIU3Mzp6ez1IDR6ektU526fJAUR7IV4IOsEAbTiyLVrxWVoiV-cke7F23sLopwnRSOGuzvogFlU4Vb6Ms5SxtwB_RbrBaH9-fJHwT3L5u-FcM1-7z9kAukUbHB8-tW-yvVzM9xpcE--s_E4svuZJ8GrKdC_r4Onc69DM9DUpi8_LFUrYlSJGXKuGbu7S4e5p4EJ4hXPUXffb508AJOqlGmSYFcrHtiBSbVzI6pSTMXGSeboj0QKGoyGgjmlKrIa8hNMe9DZCF-g8=s1415-no?authuser=0"
+              alt="project-1"
+              style="width: 100%; height: 100%;"
+              class="img-fluid"
+            />
+            <div class="mask flex-center rgba-white-slight">
+              <h2 class="white-text">Covidibuddy</h2>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="proj" data-aos="fade-up" data-aos-duration="3000">
+        <a href="./proj-1.html">
+          <div style="margin: auto;" class="view overlay zoom">
+            <img
+              src="assets/img/project-pic.png"
+              alt="Avatar"
+              style="width: 100%; height: 100%;"
+              class="img-fluid"
+            />
+            <div class="mask flex-center rgba-white-slight">
+              <h2 class="white-text">Water Me</h2>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="proj" data-aos="fade-up" data-aos-duration="2000">
+        <a href="./proj-1.html">
+          <div style="margin: auto;" class="view overlay zoom">
+            <img
+              src="assets/img/project-pic.png"
+              alt="Avatar"
+              style="width: 100%; height: 100%;"
+              class="img-fluid"
+            />
+            <div class="mask flex-center rgba-white-slight">
+              <h2 class="white-text">DalTAMS</h2>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="proj" data-aos="fade-up" data-aos-duration="3000">
+        <a href="./proj-1.html">
+          <div style="margin: auto;" class="view overlay zoom">
+            <img
+              src="assets/img/project-pic.png"
+              alt="Avatar"
+              style="width: 100%; height: 100%;"
+              class="img-fluid"
+            />
+            <div class="mask flex-center rgba-white-slight">
+              <h2 class="white-text">Robotics Projects</h2>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="proj" data-aos="fade-up" data-aos-duration="2000">
+        <a href="./proj-1.html">
+          <div style="margin: auto;" class="view overlay zoom">
+            <img
+              src="assets/img/project-pic.png"
+              alt="Avatar"
+              style="width: 100%; height: 100%;"
+              class="img-fluid"
+            />
+            <div class="mask flex-center rgba-white-slight">
+              <h2 class="white-text">Water Me </h2>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="proj" data-aos="fade-up" data-aos-duration="3000">
+        <a href="./proj-1.html">
+          <div style="margin: auto;" class="view overlay zoom">
+            <img
+              src="assets/img/project-pic.png"
+              alt="Project-1"
+              style="width: 100%; height: 100%;"
+              class="img-fluid"
+            />
+            <div class="mask flex-center rgba-white-slight">
+              <h2 class="white-text">Water Me </h2>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+    <nav class="nav" style="float:left; background-color: lightslategrey;">
+      <div class="container-fluid">
+        <ul class="nav navbar-right" style="width: 100%; margin: 2px">
+            <a href="https://github.com/mukaddim98/" target="_blank"><img src="assets/icons/github.png" width="100%" ></a>
+          </li>
+          <li style="padding: 0px; width: 33%;">
+            <a href="https://www.linkedin.com/in/abdullah-al-mukaddim/" target="_blank"><img src="assets/icons/linkedin.png" width="100%"></a>
+          </li>
+          <li style="padding: 0px; width: 33%;">
+            <a href="https://www.instagram.com/mkdcodes/" target="_blank"><img src="assets/icons/instagram.png" width="100%"></a>
+          </li>
+        </ul>
+        
+      </div>
+    </nav>
+  </body>
+  <script>
+    AOS.init();
+  </script>
 </html>
