@@ -26,15 +26,26 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
     <style>
+      .underline{
+        font-size: larger;
+        text-decoration: underline;
+      }
+      .list{
+        margin-top: 10px;
+      }
+      .highlight{
+        font-size: larger;
+        font-weight: bold;
+      }
       .proj{
         width: 33%; padding: 10px;
       }
       #hello{
-        padding: 50px; width: 50%; float: left;
+        padding: 30px; width: 50%; float: left;
       }
       #hello2{
         display: none;
-        padding: 50px; width: 50%; float: left;
+        padding: 30px; width: 50%; float: left;
       }
       #profilePic{
         background-color: thistle;
@@ -88,23 +99,22 @@
       style="float: left;"
     >
     <div
-    id="hello2"
-    data-aos="fade-up"
-    data-aos-duration="2000"
-  >
-    <h1>"Hello World"</h1>
-    <h2>> I'M ABDULLAH</h2>
-    <p>
-      Passionate software developer studying at
-      <span style="font-weight: bold; font-size: large;"
-        >Dalhousie University</span
+        id="hello2"
       >
-      with enthusism in Robotics and AI. Looking forward to doing
-      <span style="font-weight: bold; font-size: large;">COOP</span> at your
-      company this
-      <span style="font-weight: bold; font-size: large;">Winter 2020</span>.
-    </p>
-  </div>
+        <h1 data-aos="fade-up" data-aos-duration="2000">"Hello World"</h1>
+        <h2 data-aos="fade-up" data-aos-duration="2100">> I'M ABDULLAH</h2>
+        <br/>
+        <p data-aos="fade-up" data-aos-duration="2400" style="font-size: large;">
+          Passionate software developer studying at
+          <span class="highlight"
+            >Dalhousie University</span
+          >
+          with enthusism in Robotics and AI. Looking forward to doing
+          <span class="highlight">COOP</span> at your
+          company this
+          <span class="highlight">Winter 2020</span>.
+        </p>
+      </div>
     <div
       id="profilePic" 
       data-aos="fade-up"
@@ -120,37 +130,43 @@
       
       <div
         id="hello"
-        data-aos="fade-up"
-        data-aos-duration="2000"
       >
-        <h1>"Hello World"</h1>
-        <h2>> I'M ABDULLAH</h2>
-        <p>
+        <h1 data-aos="fade-up" data-aos-duration="2000">"Hello World"</h1>
+        <h2 data-aos="fade-up" data-aos-duration="2100">> I'M ABDULLAH</h2>
+        <br/>
+        <p data-aos="fade-up" data-aos-duration="2400" style="font-size: large;">
           Passionate software developer studying at
-          <span style="font-weight: bold; font-size: large;"
+          <span class="highlight"
             >Dalhousie University</span
           >
           with enthusism in Robotics and AI. Looking forward to doing
-          <span style="font-weight: bold; font-size: large;">COOP</span> at your
+          <span class="highlight">COOP</span> at your
           company this
-          <span style="font-weight: bold; font-size: large;">Winter 2020</span>.
+          <span class="highlight">Winter 2020</span>.
         </p>
       </div>
       
      
     </div>
 
-    <div class="row m-5" style="float:left;">
-      <div class="mb-5" style="width: 100%; text-align: center; padding: 10px">
-        <h1 data-aos="fade-up" data-aos-duration="2000">What I did this Summer...</h1>
-        <p data-aos="fade-up" data-aos-duration="2500">I started of this April enrolling in a COVID-19 Hackathon with a team of 4 where I got to work on a COVID-19 companion app idea. After we got knocked out, I planned on taking the project on my own, which drove me to learn more about React Native. While watching tutorials on YouTube, I realised how powerful React Native was. I was always interested with Raspberry Pi and I got a amazing idea to work on a gardening project. At this point I thought I’d take more professional courses. So I enrolled in the Ultimate React Native Course with Mosh where it was teaching me how to make an app like Kijiji. After doing the 1st part of the course I thought I need to learn about the React.js to clear up a bit on the basics. But in that moment I got a opportunity to take a course at Dalhousie that mimicked a workplace like environment. It was a 2 months course and the last 4 weeks, our team build a TA Management System for the Dal FCS. Right now, I am learning React.js with Mosh to build a shopping cart website. After that I’ll finish up the React Native course. Along side that I’ll be working on the water me and the Covidibuddy and a cousin’s remote barber app idea.</p>
+    <div class="col-12 mt-5 mb-5" style="float:left;">
+      <div style="width: 100%; padding: 10px; margin:auto; width:80%">
+        <h1 data-aos="fade-up" data-aos-duration="2000">What I did this Summer 2020...</h1>
+        <ul style="font-size:medium;">
+          <br/>
+          <li class="list" data-aos="fade-up" data-aos-duration="2100">Participated in a <span class="highlight">COVID-19 Hackathon</span></li>
+          <li class="list" data-aos="fade-up" data-aos-duration="2200">Took online courses to learn <span class="highlight">React</span> and <span class="highlight">React Native</span></li>
+          <li class="list" data-aos="fade-up" data-aos-duration="2300">Started <span class="highlight">two personal projects</span> all of which includes mobile app development</li>
+          <li class="list" data-aos="fade-up" data-aos-duration="2400">Bought a <span class="highlight">Raspberry Pi</span> for one of the projects</li>
+          <li class="list" data-aos="fade-up" data-aos-duration="2500">Worked in a <span class="highlight">mock company</span> to build a <span class="highlight">TA Management System</span></li>
+        </ul>
       </div>
     </div>
 
     <div class="row m-5" style="float:left;">
       <div class="mb-5" style="width: 100%; text-align: center;" data-aos="fade-up"
       data-aos-duration="2000">
-        <h1>My Recent Projects</h1>
+        <h1>My Projects</h1>
       </div>
 
       <div class="proj" data-aos="fade-up" data-aos-duration="2000">
@@ -245,6 +261,18 @@
         </a>
       </div>
 
+    </div>
+
+    <div class="col-12 mt-5 mb-5" style="float:left;">
+      <div style="width: 100%; padding: 10px; float: right; width:60%">
+        <h1 data-aos="fade-up" data-aos-duration="2000">My plan before 2nd work term...</h1>
+        <ul style="font-size:medium;">
+          <br/>
+          <li class="list" data-aos="fade-up" data-aos-duration="2200"><span class="underline">Complete</span> the two courses on <span class="highlight">React</span> and <span class="highlight">React Native</span></li>
+          <li class="list" data-aos="fade-up" data-aos-duration="2300"><span class="underline">Complete</span> at least one of the two projects <span class="highlight">COVID-19 Hackathon</span></li>
+          <li class="list" data-aos="fade-up" data-aos-duration="2400"><span class="underline">Complete</span> my <span class="highlight">Fall Term</span> school courses</li>
+        </ul>
+      </div>
     </div>
 
     <nav class="nav" style="float:left; background-color: lightslategrey;">
