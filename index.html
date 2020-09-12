@@ -102,14 +102,12 @@
     <script src="./mdbootstrap/js/popper.min.js"></script>
     <script src="./assets/scripts/main.js"></script>
   </head>
-  <body>
+  <body onload="displayChange()">
     <nav
       class="navbar navbar-expand-sm bg-dark navbar-dark"
       style="width: 100%"
     >
-      <a class="navbar-brand" onClick="alert2()" href="#"
-        >Abdullah Al Mukaddim</a
-      >
+      <a class="navbar-brand" href="#">Abdullah Al Mukaddim</a>
 
       <!-- Links -->
       <ul class="navbar-nav">
@@ -351,10 +349,7 @@
       </div>
     </div>
 
-    <footer
-      id="footer"
-      style="background-color: grey; width: 100%; float: left"
-    >
+    <footer id="footer" style="width: 100%; float: left" class="bg-dark">
       <div id="email" class="white-text">
         <h4 class="text-uppercase font-weight-bold">Contact Me</h4>
         <br />
