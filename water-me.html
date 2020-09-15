@@ -148,7 +148,7 @@
       </div>
 
       <div id="projPic" data-aos="fade-up" data-aos-duration="3000">
-        <img src="./assets/img/water-me-2.jpg" alt="Water Me" width="100%" />
+        <img src="./assets/img/water-me-1.jpeg" alt="Water Me" width="100%" />
       </div>
       <div class="descp">
         <div id="descpHead" class="mb-5">
@@ -187,23 +187,34 @@
           </span>
         </div>
         <div class="mt-5">
-          <p data-aos="fade-up" data-aos-duration="2400">
-            Reason behind: I was told to water the plants while my aunt was off
-            in vacation. I forgot to water them regularly. Eventually some of
-            her indoor plants died. So I thought wouldn’t it be a nice idea if
-            my phone reminded me if the plants needed water. If they got too
-            much or too little.
-          </p>
           <p data-aos="fade-up" data-aos-duration="2500">
-            The idea: An app that lets you know if your plant needs water
-            through push notification. The interface includes the current state
-            the water moisture level. However to make it more fun, the plant
-            tells.
+            <span class="highlight">The idea:</span> An app that lets you know
+            if your plant needs water through push notification. The interface
+            includes the current state the water moisture level. However to make
+            it more fun, an animated plant will be present in the UI that would
+            talk to the user with a small dialogue box above it where it would
+            say various things like "I am thirsty. Need water!" or "I'm full.
+            Will vomit now!" and a lot more!
           </p>
-          <p data-aos="fade-up" data-aos-duration="2600">The implementation:</p>
+          <p data-aos="fade-up" data-aos-duration="2400">
+            <span class="highlight">Motivation behind the project:</span> I was
+            told to water the plants while my aunt was off in vacation. I forgot
+            to water them regularly. Eventually some of her indoor plants died.
+            So I thought wouldn’t it be a nice idea if my phone reminded me if
+            the plants needed water. If they got too much or too little.
+          </p>
+          <p data-aos="fade-up" data-aos-duration="2600">
+            <span class="highlight">The implementation:</span> The idea is to
+            build an app using React Native and connect it to the server hosted
+            in the Raspberry Pi. The Raspberry Pi will be connected to a soil
+            moisture sensor and send real time data to the app. The Pi here
+            works both as a server and a monitoring system
+          </p>
           <p data-aos="fade-up" data-aos-duration="2700">
-            Current state: I bought a Raspberry Pi Zero and Soil Moisture Sensor
-            and wrote a test program to check if the soil
+            <span class="highlight">Current state:</span> I bought a Raspberry
+            Pi Zero and Soil Moisture Sensor and wrote a test program to ensure
+            that the sensor works. I also implemented a server system in the Pi.
+            Right now I'm taking a React Native course.
           </p>
           <br />
           <a href="https://github.com/mukaddim98/water-me.git" target="_blank">
